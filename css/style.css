@@ -35,6 +35,13 @@ body {
 }
 .header img {
     max-width: 270px;
+    animation: imagen 2000ms 1;
+}
+@keyframes imagen{
+        0% {width: 0px;}
+        60% {width: 300px;}
+        100% {width: 270px;}
+    
 }
 .header {
     display: flex;
@@ -369,6 +376,11 @@ body {
     text-align: center;
     font-size: 25px;
     font-family: 'Righteous', cursive;
+}
+.content .carta ul :hover {
+    text-decoration: overline;
+    text-decoration-color: white;
+    transform: scale(1.2);
 }
 .content1 .carta p{
     font-size: 20px;
