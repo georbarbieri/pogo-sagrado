@@ -377,11 +377,7 @@ body {
     font-size: 25px;
     font-family: 'Righteous', cursive;
 }
-.content .carta ul :hover {
-    text-decoration: overline;
-    text-decoration-color: white;
-    transform: scale(1.2);
-}
+
 .content1 .carta p{
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
