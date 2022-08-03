@@ -4,6 +4,7 @@
 *{
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 body {
@@ -24,25 +25,18 @@ body {
     grid-template-columns: repeat(5, 1fr);
     justify-content: center;
 }
-.eslogan {
-    padding: 20px 0;
-    text-align: center;
-    justify-content: stretch;
-    font-size: 20px;
-    font-style: italic;
-    font-weight: bold;
-    color: crimson;
-}
+
 .header img {
-    max-width: 270px;
+    max-width: 200px;
     animation: imagen 2000ms 1;
 }
 @keyframes imagen{
         0% {width: 0px;}
-        60% {width: 300px;}
-        100% {width: 270px;}
+        60% {width: 270px;}
+        100% {width: 200px;}
     
 }
+
 .header {
     display: flex;
     flex-direction: row;
@@ -52,10 +46,11 @@ body {
     background-color: black;
 }
 .header nav{
-    width: 90%;
+    width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    background-color: black;
 }
 
 .header nav ul li {
@@ -85,6 +80,7 @@ body {
     text-decoration: overline;
     text-decoration-color: white;
     transform: scale(1.2);
+    color: orange;
 }
 
 
@@ -124,7 +120,6 @@ body {
 
 .container>.header, .container>.footer {
     grid-column: 1/-1;
-    background-color: black;
     color: #ffffff;
     border: none;
 }
@@ -332,8 +327,7 @@ body {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 40px;
-    grid-column: 1/7;
+    padding: 5px 45px;
 }
 .container1 .tituloBienvenida{
     padding: 20px 0 ;
@@ -489,7 +483,6 @@ body {
 
 .container1>.header, .container1>.footer {
     grid-column: 1/-1;
-    background-color: black;
     color: #ffffff;
     border: none;
 }
@@ -498,7 +491,16 @@ body {
     display: grid;
     gap: 1.6em auto;
     grid-template-columns: repeat(5, 1fr);
+    
 }
+.container1 .header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 45px;
+}
+
 .container1 > .content2 {
     grid-column: 1/5;
     grid-row: span 3;
@@ -549,7 +551,6 @@ body {
 
 .container1>.header, .container1>.footer {
     grid-column: 1/-1;
-    background-color: black;
     color: #ffffff;
     border: none;
 }
@@ -763,6 +764,10 @@ animation: prox 1500ms 1;}
     font-size: 25px;
     font-family: 'quicksand',sans-serif
 }
+.container1 .carousel {
+    margin: 20px;
+    padding: 20px;
+}
 .container1 .content3 .comida{
     background-image: url(../img/publico.jpg);
     background-repeat: no-repeat;
@@ -822,6 +827,8 @@ animation: prox 1500ms 1;}
     display: flex;
     flex-direction: column;
 }
+
+
 .container1 .content3 .what{
     display: flex;
     justify-content: center;
