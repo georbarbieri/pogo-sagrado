@@ -52,14 +52,15 @@ body {
     align-items: center;
     background-color: black;
 }
-.navbar-toggler {
+.navbar-toggler-icon {
     padding: 0.25rem 0.75rem;
     font-size: 1.25rem;
     line-height: 1px ;
     background-color: transparent;
     border: 1px solid crimson;
     border-radius: 0.25rem;
-    transition: box-shadow .15s ease-in-out;}
+    transition: box-shadow .15s ease-in-out;
+}
 
 .header nav ul li {
     list-style: none;
