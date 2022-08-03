@@ -52,7 +52,7 @@ body {
     align-items: center;
     background-color: black;
 }
-.header nav button {
+.header .navbar-toggler {
     color: crimson;
     border-color: crimson;
     background-color: crimson;
