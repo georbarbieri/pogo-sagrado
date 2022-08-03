@@ -52,6 +52,11 @@ body {
     align-items: center;
     background-color: black;
 }
+.header nav button {
+    color: crimson;
+    border-color: crimson;
+    background-color: crimson;
+}
 
 .header nav ul li {
     list-style: none;
