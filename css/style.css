@@ -52,7 +52,7 @@ body {
     align-items: center;
     background-color: black;
 }
-.header .navbar-toggler {
+.header .navbar-toggler.collapsed {
     color: crimson;
     border-color: crimson;
     background-color: crimson;
