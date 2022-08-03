@@ -55,7 +55,6 @@ body {
 .header .navbar-toggler {
     color: crimson;
     border-color: crimson;
-    text-shadow: white;
 }
 
 .header nav ul li {
@@ -69,9 +68,6 @@ body {
     font-family: 'Quicksand', sans-serif;
     justify-content: space-between ;
 
-}
-.header  btn-secondary dropdown-toggle{
-    background-color: blue;
 }
 .header nav ul li a{
     text-decoration: none;
