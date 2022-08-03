@@ -55,7 +55,7 @@ body {
 .header .navbar-toggler {
     color: crimson;
     border-color: crimson;
-    background-color: crimson;
+    text-shadow: white;
 }
 
 .header nav ul li {
