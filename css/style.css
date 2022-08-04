@@ -333,6 +333,17 @@ body {
     align-items: center;
     padding: 5px 45px;
 }
+.container1 header{
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    color:orangered;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    justify-content: space-between ;
+}
 .container1 .tituloBienvenida{
     padding: 20px 0 ;
     text-align: center;
@@ -497,14 +508,56 @@ body {
     grid-template-columns: repeat(5, 1fr);
     
 }
+
 .container1 .header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 5px 45px;
+    background-color: black;
+}
+.container1 .header nav{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: black;
+}
+.container1 .header .navbar-toggler {
+    color: crimson;
+    border-color: crimson;
 }
 
+.container1 .header nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 20px;
+    text-decoration: none;
+    color:orangered;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    justify-content: space-between ;
+
+}
+.container1 .header nav ul li a{
+    text-decoration: none;
+    color:orangered;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: 'Quicksand', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container1 .header nav ul li :hover{
+    text-decoration: overline;
+    text-decoration-color: white;
+    transform: scale(1.2);
+    color: orange;
+}
 .container1 > .content2 {
     grid-column: 1/5;
     grid-row: span 3;
