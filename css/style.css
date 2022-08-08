@@ -1,15 +1,15 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand&family=Righteous&display=swap');
 
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    background: rgb(0,0,0);
-    background: linear-gradient(180deg, rgba(0,0,0,1) 21%, rgba(162,11,14,1) 75%, rgba(255,166,0,1) 100%);
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 21%, rgba(162, 11, 14, 1) 75%, rgba(255, 166, 0, 1) 100%);
     font-family: 'quicksand', sans-serif;
 
 }
@@ -30,11 +30,20 @@ body {
     max-width: 200px;
     animation: imagen 2000ms 1;
 }
-@keyframes imagen{
-        0% {width: 0px;}
-        60% {width: 270px;}
-        100% {width: 200px;}
-    
+
+@keyframes imagen {
+    0% {
+        width: 0px;
+    }
+
+    60% {
+        width: 270px;
+    }
+
+    100% {
+        width: 200px;
+    }
+
 }
 
 .header {
@@ -45,13 +54,15 @@ body {
     padding: 5px 45px;
     background-color: black;
 }
-.header nav{
+
+.header nav {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
     background-color: black;
 }
+
 .header .navbar-toggler {
     color: crimson;
     border-color: crimson;
@@ -63,17 +74,17 @@ body {
     display: inline-block;
     margin: 20px;
     text-decoration: none;
-    color:orangered;
+    color: orangered;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
-    justify-content: space-between ;
+    justify-content: space-between;
 
 }
 
-.header nav ul li a{
+.header nav ul li a {
     text-decoration: none;
-    color:orangered;
+    color: orangered;
     font-size: 20px;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
@@ -82,7 +93,7 @@ body {
     align-items: center;
 }
 
-.header nav ul li :hover{
+.header nav ul li :hover {
     text-decoration: overline;
     text-decoration-color: white;
     transform: scale(1.2);
@@ -96,57 +107,75 @@ body {
 }
 
 .tituloBienvenida h1 {
-    padding: 20px 0 ;
+    padding: 20px 0;
     text-align: center;
     font-size: 60px;
     color: crimson;
     font-family: 'Righteous', cursive;
     animation: compress 1500ms 1;
 }
-@keyframes compress{
-    0% {letter-spacing: 20px;}
-    60% {letter-spacing: -2px;}
-    100% {letter-spacing: 1px;}
+
+@keyframes compress {
+    0% {
+        letter-spacing: 20px;
+    }
+
+    60% {
+        letter-spacing: -2px;
+    }
+
+    100% {
+        letter-spacing: 1px;
+    }
 }
 
-@keyframes colorChange{
-    0% {color: orange;}
-    100% {color: crimson;}
+@keyframes colorChange {
+    0% {
+        color: orange;
+    }
+
+    100% {
+        color: crimson;
+    }
 }
 
 
-.container> .header,
-.container> .content,
-.container> .sidebar,
-.container> .footer,
-.container> div{
+.container>.header,
+.container>.content,
+.container>.sidebar,
+.container>.footer,
+.container>div {
     padding: 20px;
     border: 1px solid crimson;
 }
 
-.container>.header, .container>.footer {
+.container>.header,
+.container>.footer {
     grid-column: 1/-1;
     color: #ffffff;
     border: none;
 }
 
-.container > .content {
+.container>.content {
     grid-column: span 3;
     grid-row: span 3;
 }
-.container  .tituloBienvenida {
+
+.container .tituloBienvenida {
     grid-column: 1/6;
     color: #ffffff;
     border: none;
 }
+
 .container .content {
     justify-content: center;
     align-items: center;
     text-align: center;
 
 }
-.container .tituloBienvenida p{
-    
+
+.container .tituloBienvenida p {
+
     color: orangered;
     font-size: 25px;
     font-weight: 700;
@@ -170,7 +199,8 @@ body {
     margin: 20px;
     padding: 10px;
 }
-.container .content  .ubicacion h2 {
+
+.container .content .ubicacion h2 {
     color: black;
     font-family: 'Righteous', cursive;
     font-size: 30px;
@@ -179,10 +209,11 @@ body {
     letter-spacing: 10px;
     text-align: center;
     margin: 20px;
-    padding: 10px;}
+    padding: 10px;
+}
 
 
-.container .content a{
+.container .content a {
     color: white;
     width: 150px;
     height: 30px;
@@ -200,11 +231,13 @@ body {
     border: white;
     transition-property: 1.5s;
 }
-.container .content .carta a:hover{
+
+.container .content .carta a:hover {
     background-color: orangered;
     border-color: #ffffff;
     transition-duration: 1.5s;
 }
+
 .container .content p {
     color: aliceblue;
     font-size: 25px;
@@ -213,11 +246,13 @@ body {
     font-weight: 700;
     margin: 30px;
 }
-.container .content .reservas a:hover{
+
+.container .content .reservas a:hover {
     background-color: orangered;
     border-color: #ffffff;
     transition-duration: 1.5s;
 }
+
 .container>.sidebar {
     grid-column: span 2;
     grid-row-start: span 3;
@@ -225,9 +260,10 @@ body {
     color: crimson;
     background-color: black;
 }
+
 .sidebar h2 {
     color: crimson;
-    font-family: 'Righteous', cursive; 
+    font-family: 'Righteous', cursive;
     font-size: 35px;
     font-style: italic;
     text-align: center;
@@ -235,6 +271,7 @@ body {
     text-decoration: underline;
     margin: 20px;
 }
+
 .sidebar div {
     color: orangered;
     font-family: 'Righteous', cursive;
@@ -246,10 +283,12 @@ body {
     margin: 10px;
     padding: 10px;
 }
-.sidebar div :hover{
+
+.sidebar div :hover {
     transform: scale(1.1);
     transition-duration: 1s;
 }
+
 .sidebar div p {
     color: white;
     font-family: 'quicksand', sans-serif;
@@ -262,18 +301,21 @@ body {
     padding: 10px;
 
 }
-.sidebar a{
+
+.sidebar a {
     text-decoration: none;
     color: orange;
     text-align: center;
     font-weight: bolder;
     font-family: 'Quicksand', sans-serif;
 }
-.sidebar .entrada :hover{
+
+.sidebar .entrada :hover {
     font-size: 25px;
     letter-spacing: 1px;
     transition-duration: 0.5s;
 }
+
 .container .sidebar img {
     display: block;
     width: 100%;
@@ -292,25 +334,29 @@ body {
     align-items: center;
     margin-bottom: 0;
 }
+
 .container footer h4 {
     text-align: center;
     padding: 25px;
-    font-family: 'Righteous',cursive;
+    font-family: 'Righteous', cursive;
     font-size: 30px;
     color: orangered;
 }
-.container footer p{
+
+.container footer p {
     color: orange;
     text-align: center;
     font-weight: bolder;
     font-family: 'Quicksand', sans-serif;
 }
-.container footer .redes img{
+
+.container footer .redes img {
     width: 80px;
     height: 80px;
     display: flex;
     flex-direction: row;
 }
+
 .container footer .redes :hover {
     transform: scale(1.2);
 }
@@ -318,25 +364,26 @@ body {
 
 /*--------------------------------Pagina de carta--------------------------*/
 
-.container1{
+.container1 {
     width: 100%;
     max-width: 1000px;
     margin: 2em auto;
     display: grid;
-    grid-template-columns: repeat(6,1fr);
+    grid-template-columns: repeat(6, 1fr);
     gap: 1.3em;
     justify-content: center;
 }
 
-.container1 header{
+.container1 header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 5px 45px;
 }
-.container1 .tituloBienvenida{
-    padding: 20px 0 ;
+
+.container1 .tituloBienvenida {
+    padding: 20px 0;
     text-align: center;
     font-size: 40px;
     color: crimson;
@@ -344,7 +391,8 @@ body {
     display: flex;
     flex-direction: column;
 }
-.container1 .tituloBienvenida p{
+
+.container1 .tituloBienvenida p {
     color: orangered;
     font-size: 25px;
     font-weight: 700;
@@ -359,7 +407,7 @@ body {
 
 
 
-.content1{
+.content1 {
     width: 100%;
     max-width: 1000px;
     margin: 2em auto;
@@ -369,24 +417,26 @@ body {
     justify-content: center;
     flex-wrap: wrap;
 }
-.content1 .carta{
+
+.content1 .carta {
     grid-column: 1/6;
     color: white;
-    padding: 20px 0 ;
+    padding: 20px 0;
     text-align: center;
     font-size: 25px;
     font-family: 'Righteous', cursive;
 }
 
-.content1 .carta p{
+.content1 .carta p {
     font-size: 20px;
     font-family: 'Quicksand', sans-serif;
     padding: 20px;
 }
-.accordion-item1{
+
+.accordion-item1 {
     grid-column: 1/-1;
     color: crimson;
-    padding: 20px 0 ;
+    padding: 20px 0;
     text-align: center;
     font-size: 25px;
     font-family: 'Righteous', cursive;
@@ -402,10 +452,11 @@ body {
     background-size: cover;
 
 }
-.accordion-item2{
+
+.accordion-item2 {
     grid-column: 1/-1;
     color: crimson;
-    padding: 20px 0 ;
+    padding: 20px 0;
     text-align: center;
     font-size: 25px;
     font-family: 'Righteous', cursive;
@@ -427,7 +478,8 @@ body {
     padding: 20px;
     text-align: justify;
 }
-.accordion-item1 ul :hover{
+
+.accordion-item1 ul :hover {
     text-decoration: underline;
     text-decoration-color: white;
     transform: scale(1.2);
@@ -441,12 +493,14 @@ body {
     padding: 20px;
     text-align: justify;
 }
-.accordion-item2 ul :hover{
+
+.accordion-item2 ul :hover {
     text-decoration: underline;
     text-decoration-color: white;
     transform: scale(1.2);
     font-weight: bold;
 }
+
 .footer {
     grid-column: 1/-1;
     padding-top: 35px;
@@ -459,20 +513,23 @@ body {
     align-items: center;
     margin-bottom: 0;
 }
+
 .footer h3 {
     text-align: center;
     padding: 25px;
-    font-family: 'Righteous',cursive;
+    font-family: 'Righteous', cursive;
     font-size: 30px;
     color: orangered;
 }
-.footer p{
+
+.footer p {
     color: orange;
     text-align: center;
     font-weight: bolder;
     font-family: 'Quicksand', sans-serif;
 }
-.footer img{
+
+.footer img {
     width: 80px;
     height: 80px;
     display: flex;
@@ -488,7 +545,8 @@ body {
 
 
 
-.container1>.header, .container1>.footer {
+.container1>.header,
+.container1>.footer {
     grid-column: 1/-1;
     color: #ffffff;
     border: none;
@@ -498,8 +556,9 @@ body {
     display: grid;
     gap: 1.6em auto;
     grid-template-columns: repeat(5, 1fr);
-    
+
 }
+
 .container1 .header {
     display: flex;
     flex-direction: row;
@@ -508,20 +567,21 @@ body {
     padding: 5px 45px;
 }
 
-.container1 > .content2 {
+.container1>.content2 {
     grid-column: 1/5;
     grid-row: span 3;
 }
 
-.container1 .content2{
+.container1 .content2 {
     width: 100%;
     max-width: 1000px;
     display: grid;
     gap: 1.6em auto;
     justify-content: center;
 }
+
 .container1 .content2 p {
-    
+
     color: orangered;
     font-size: 35px;
     font-weight: 700;
@@ -530,6 +590,7 @@ body {
     letter-spacing: 5px;
     text-align: center;
 }
+
 .container1 .content2 h2 {
     color: crimson;
     font-family: 'Righteous', cursive;
@@ -547,26 +608,28 @@ body {
     height: 150px;
 }
 
-.container1> .header,
-.container1> .content2,
-.container1> .sidebar,
-.container1> .footer,
-.container1> div{
+.container1>.header,
+.container1>.content2,
+.container1>.sidebar,
+.container1>.footer,
+.container1>div {
     padding: 20px;
     border: 1px solid crimson;
 }
 
-.container1>.header, .container1>.footer {
+.container1>.header,
+.container1>.footer {
     grid-column: 1/-1;
     color: #ffffff;
     border: none;
 }
 
-.container1  .tituloBienvenida {
+.container1 .tituloBienvenida {
     grid-column: 1/6;
     color: #ffffff;
     border: none;
 }
+
 .container1 .content2 {
     display: flex;
     flex-direction: column;
@@ -577,8 +640,9 @@ body {
     grid-row: span 3;
 
 }
-.container1 .tituloBienvenida p{
-    
+
+.container1 .tituloBienvenida p {
+
     color: orangered;
     font-size: 25px;
     font-weight: 700;
@@ -588,15 +652,27 @@ body {
     text-align: center;
     margin: 10px;
     padding: 10px;
-    
+
 }
+
 .container1 .content2 p {
-animation: prox 1500ms 1;}
-@keyframes prox {
-    0% {letter-spacing: 10px;}
-    50%{letter-spacing: -2px;}
-    100%{letter-spacing: 2px;}
+    animation: prox 1500ms 1;
 }
+
+@keyframes prox {
+    0% {
+        letter-spacing: 10px;
+    }
+
+    50% {
+        letter-spacing: -2px;
+    }
+
+    100% {
+        letter-spacing: 2px;
+    }
+}
+
 .container1 .content2 h2 {
     color: crimson;
     font-family: 'Righteous', cursive;
@@ -608,7 +684,8 @@ animation: prox 1500ms 1;}
     margin: 20px;
     padding: 10px;
 }
-.container1 .content2  .ubicacion h2 {
+
+.container1 .content2 .ubicacion h2 {
     color: crimson;
     font-family: 'Righteous', cursive;
     font-size: 30px;
@@ -618,7 +695,7 @@ animation: prox 1500ms 1;}
     text-align: center;
     margin: 20px;
     padding: 10px;
-    
+
 }
 
 .container1 .content2 img {
@@ -626,11 +703,12 @@ animation: prox 1500ms 1;}
     max-width: 400px;
     height: 200px;
 }
-.container1 .content2 a{
+
+.container1 .content2 a {
     color: white;
     width: 150px;
     height: 30px;
-    font-family: 'quicksand',sans-serif;
+    font-family: 'quicksand', sans-serif;
     font-weight: bold;
     font-size: 25px;
     justify-content: center;
@@ -641,22 +719,27 @@ animation: prox 1500ms 1;}
     margin-top: 50px;
     margin-bottom: 20px;
 }
-.container1 .content2 .carta  :hover{
+
+.container1 .content2 .carta :hover {
     transform: scale(1.1);
     transition-duration: 1s;
 }
-.container1 .content2 .reservas  :hover{
+
+.container1 .content2 .reservas :hover {
     transform: scale(1.1);
     transition-duration: 1s;
 }
-.container1 .content2 .ubicacion  :hover{
+
+.container1 .content2 .ubicacion :hover {
     transform: scale(1.1);
     transition-duration: 1s;
 }
-.container1 .content2 .hora  :hover{
+
+.container1 .content2 .hora :hover {
     transform: scale(1.1);
     transition-duration: 1s;
 }
+
 .container1 .content2 p {
     color: aliceblue;
     font-size: 20px;
@@ -672,9 +755,10 @@ animation: prox 1500ms 1;}
     color: crimson;
     background-color: black;
 }
+
 .container1 .sidebar h2 {
     color: crimson;
-    font-family: 'Righteous', cursive; 
+    font-family: 'Righteous', cursive;
     font-size: 35px;
     font-style: italic;
     text-align: center;
@@ -682,6 +766,7 @@ animation: prox 1500ms 1;}
     text-decoration: underline;
     margin: 20px;
 }
+
 .container1 .sidebar div {
     color: orangered;
     font-family: 'Righteous', cursive;
@@ -693,6 +778,7 @@ animation: prox 1500ms 1;}
     margin: 10px;
     padding: 10px;
 }
+
 .container1 .sidebar div p {
     color: white;
     font-family: 'quicksand', sans-serif;
@@ -705,13 +791,15 @@ animation: prox 1500ms 1;}
     padding: 10px;
 
 }
-.container1 .sidebar a{
+
+.container1 .sidebar a {
     text-decoration: none;
     color: orange;
     text-align: center;
     font-weight: bolder;
     font-family: 'Quicksand', sans-serif;
 }
+
 .container1 .sidebar img {
     display: block;
     width: 100%;
@@ -730,20 +818,23 @@ animation: prox 1500ms 1;}
     align-items: center;
     margin-bottom: 0;
 }
+
 .container1 footer h4 {
     text-align: center;
     padding: 25px;
-    font-family: 'Righteous',cursive;
+    font-family: 'Righteous', cursive;
     font-size: 30px;
     color: orangered;
 }
-.container1 footer p{
+
+.container1 footer p {
     color: orange;
     text-align: center;
     font-weight: bolder;
     font-family: 'Quicksand', sans-serif;
 }
-.container1 footer img{
+
+.container1 footer img {
     width: 80px;
     height: 80px;
     display: flex;
@@ -755,88 +846,107 @@ animation: prox 1500ms 1;}
 
 /* ------------------------ACERCA DE NOSOTROS------------------------*/
 
-.container1 .content3{
+.container1 .content3 {
     grid-column: 1/6;
     color: white;
-    padding: 20px 0 ;
+    padding: 20px 0;
     text-align: center;
     font-size: 25px;
     font-family: 'Righteous', cursive;
     margin: 10px;
 }
 
-.container1 .content3 p{
+.container1 .content3 p {
     grid-column: 1/6;
     color: white;
-    padding: 20px 0 ;
+    padding: 20px 0;
     text-align: center;
     font-size: 25px;
-    font-family: 'quicksand',sans-serif
+    font-family: 'quicksand', sans-serif
 }
+
 .container1 .carousel {
     margin: 20px;
     padding: 20px;
 }
-.container1 .content3 .comida{
+
+.container1 .content3 .comida {
     background-image: url(../img/publico.jpg);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
 }
-.container1 .content3 .comida .rata{
+
+.container1 .content3 .comida .rata {
     display: flex;
     flex-direction: column;
     margin: 20px;
     text-align: center;
     align-items: center;
 }
-.container1 .content3 .comida .ajeno{
+
+.container1 .content3 .comida .ajeno {
     display: flex;
     flex-direction: column;
     margin: 20px;
     text-align: center;
     align-items: center;
 }
-.container1 .content3 .comida .profecia{
+
+.container1 .content3 .comida .profecia {
     display: flex;
     flex-direction: column;
     margin: 20px;
     text-align: center;
     align-items: center;
 }
-.container1 .content3 .comida .ruso{
+
+.container1 .content3 .comida .ruso {
     display: flex;
     flex-direction: column;
     margin: 20px;
     text-align: center;
     align-items: center;
 }
-.container1 .content3 .comida div h3{
+
+.container1 .content3 .comida div h3 {
     display: flex;
     flex-direction: column;
 }
+
 .container1 .content3 .card {
     background-color: black;
     color: orange;
 }
+
 .container1 .content3 blockquote {
     color: black;
     background-color: orange;
 }
-.container1 .content3 footer{
+
+.container1 .content3 footer {
     align-items: center;
     justify-content: center;
 }
 
-.container1 .content3 h2{
+.container1 .content3 h2 {
     display: grid;
     grid-column: 1/-1;
     animation: espec 3500ms infinite;
 }
+
 @keyframes espec {
-    0% {letter-spacing: 10px;}
-    60% {letter-spacing: -2px;}
-    100%{letter-spacing: 10px;}
+    0% {
+        letter-spacing: 10px;
+    }
+
+    60% {
+        letter-spacing: -2px;
+    }
+
+    100% {
+        letter-spacing: 10px;
+    }
 }
 
 
@@ -844,13 +954,13 @@ animation: prox 1500ms 1;}
 /*--------------CONTACTO-----------------------------------------------*/
 
 
-.container .content3 .what h2{
+.container .content3 .what h2 {
     display: flex;
     flex-direction: column;
 }
 
 
-.container1 .content3 .what{
+.container1 .content3 .what {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -864,6 +974,7 @@ animation: prox 1500ms 1;}
     font-weight: 700;
     margin: 50px;
 }
+
 .container1 .content3 .what img {
     width: 100px;
     height: 100px;
@@ -889,7 +1000,8 @@ animation: prox 1500ms 1;}
     text-align: center;
     font-weight: 700;
 }
-.container1 .conten3 .llegar p{
+
+.container1 .conten3 .llegar p {
     width: 250px;
     color: aliceblue;
     font-size: 20px;
@@ -901,8 +1013,8 @@ animation: prox 1500ms 1;}
     flex-direction: row;
 }
 
-.container1 .content3 .llegar h2{
-    color:orangered;
+.container1 .content3 .llegar h2 {
+    color: orangered;
     font-family: 'Righteous', cursive;
     font-size: 40px;
     font-style: italic;
@@ -918,66 +1030,75 @@ animation: prox 1500ms 1;}
     .eslogan {
         text-align: center;
     }
+
     .container header {
         display: flex;
         flex-direction: column;
 
     }
+
     .container1 header {
         display: flex;
         flex-direction: column;
     }
+
     .container .content {
         grid-column: 1 / -1;
     }
+
     .container1 .content1 {
         grid-column: 1 / -1;
     }
+
     .container .sidebar {
         grid-column: 1 / -1;
     }
-    .container .sidebar div img{
+
+    .container .sidebar div img {
         width: 100%;
     }
 
     .container footer .redes {
         grid-column: 1/-1;
         display: flex;
-        flex-wrap: wrap; }
+        flex-wrap: wrap;
+    }
 
-.footer .redes {
-    grid-column: 1/-1;
-    display: flex;
-    flex-wrap: wrap; }
+    .footer .redes {
+        grid-column: 1/-1;
+        display: flex;
+        flex-wrap: wrap;
+    }
 
-.container iframe{
-    width: 100%;
-    height: 150%;
-}
+    .container iframe {
+        width: 100%;
+        height: 150%;
+    }
 
-.content  a{
-    display: flex;
-    flex-direction: column;
+    .content a {
+        display: flex;
+        flex-direction: column;
 
-    justify-content: center;
-    
-}
+        justify-content: center;
 
-.container content a {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-.container1 {
-    display: flex;
-    flex-wrap: wrap;
-}
+    }
 
-.container1 .conten3 {
-    padding: 10px;
-    width: 70%;
-    margin: 1.6rem;
-}
+    .container content a {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .container1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .container1 .conten3 {
+        padding: 10px;
+        width: 70%;
+        margin: 1.6rem;
+    }
 
 
 }
