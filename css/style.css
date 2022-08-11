@@ -1,32 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand&family=Righteous&display=swap");
+
+/*---------------------------------------Paleta de Colores-------------------------*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: black;
+    background: linear-gradient(180deg, black 21%, #a20b0e 75%, #ffa600 100%);
+    font-family: 'quicksand', sans-serif;
+}
+
 .container {
-  width: 100%;
-  max-width: 1000px;
-  margin: 2em auto;
-  display: grid;
-  gap: 1.3em;
-  grid-template-columns: repeat(5, 1fr);
-  justify-content: center; }
-  .container header {
+    width: 100%;
+    max-width: 1000px;
+    margin: 2em auto;
+    display: grid;
+    gap: 1.3em;
+    grid-template-columns: repeat(5, 1fr);
+    justify-content: center;
+}
+
+header {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     padding: 5px 45px;
-    background-color: black; }
-  .container img {
+    background-color: black;
+}
+
+header img {
     max-width: 200px;
-    animation: imagen 2000ms 1; }
-  .container nav {
+    animation: imagen 2000ms 1;
+}
+
+header nav {
     width: 100%;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
-    background-color: black; }
-  .container .nav-toggler {
-    color: crimson;
-    border-color: crimson;
-    text-shadow: white; }
-  .container ul li {
+    background-color: black;
+}
+
+header nav ul li {
     list-style: none;
     display: inline-block;
     margin: 20px;
@@ -35,8 +54,10 @@
     font-size: 20px;
     font-weight: bold;
     font-family: 'Quicksand', sans-serif;
-    justify-content: space-between; }
-  .container ul a {
+    justify-content: space-between;
+}
+
+header nav ul li a {
     text-decoration: none;
     color: orangered;
     font-size: 20px;
@@ -44,4 +65,19 @@
     font-family: 'Quicksand', sans-serif;
     display: flex;
     justify-content: center;
-    align-items: center; }
+    align-items: center;
+}
+
+header nav ul li a:hover {
+    text-decoration: overline;
+    text-decoration-color: white;
+    transform: scale(1.2);
+    color: orange;
+}
+
+header .nav-toggler {
+    color: crimson;
+    border-color: crimson;
+    text-shadow: white;
+}
+
